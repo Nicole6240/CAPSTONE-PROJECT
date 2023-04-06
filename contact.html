@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> Contact Form </title>
+    <meta name="description" content="Contact Us">
+    <link rel="stylesheet" type="text/css" href="contact.css">
+    <script src="contact.js"></script>
+  </head>
+  
+        <header>
+          <!--start of navbar and search bar-->
+          <body class="nav3">
+          <img src="community_change_logo.jpeg" class="logo" alt="Community Change">
+    <div class="group">
+    <ul class="navbar">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="form.html">Take Action</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+    <div class="search">
+    <span class="icon">
+      <ion-icon name="search-outline" class="searchBtn"></ion-icon>
+      <ion-icon name="close-outline" class="closeBtn"></ion-icon>
+    </span>
+    </div>
+    <ion-icon name="menu-outline" class="menuToggle"></ion-icon>
+    </div>
+    <div class="searchBox">
+      <input type="text" placeholder="Search Here...">
+    </div>
+        </header>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+      let searchBtn = document.querySelector('.searchBtn');
+      let closeBtn = document.querySelector('.closeBtn');
+      let searchBox = document.querySelector('.searchBox');
+      let navbar = document.querySelector('.navbar');
+      let menuToggle = document.querySelector('.menuToggle');
+      let header = document.querySelector('header');
+    
+    
+      searchBtn.onclick = function(){
+        searchBox.classList.add('active');
+        closeBtn.classList.add('active');
+        searchBtn.classList.add('active');
+        menuToggle.classList.add('hide');
+        header.classList.remove('open');
+      }
+      closeBtn.onclick = function(){
+        searchBox.classList.remove('active');
+        closeBtn.classList.remove('active');
+        searchBtn.classList.remove('active')
+        menuToggle.classList.remove('hide');
+      }
+      menuToggle.onclick = function(){
+        header.classList.toggle('open');
+        searchBox.classList.remove('active');
+        closeBtn.classList.remove('active');
+        searchBtn.classList.remove('active')
+      }
+    </script>
+     </body>
+    <!--END OF NAVBAR AND SEARCH BAR-->
+   
+    
+    <!-- Content of the page should go here! -->
+
+<body>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">  
+
+  
+    
+
+    
+
+
+
+    <div class="contact">
+        <h1>Contact Us</h1>
+      </div>
+
+      <br>
+
+    </br>
+
+<h2> Email us with an with any questions and inquiries or call <mark>(404)-090-2009</mark>. We will be happy to answer your questions and set up a meeting with you. Community Change can help you and change the community!</h2>
+
+
+<div class="container">
+  <form action="action_page.php">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    
+     <label for="email">Email</label>
+    <input type="text" id="email" name="email" placeholder="Your email..">
+    
+<p>Please enter an accurate email address so that we can get back to you.</p>
+     <br>
+    </br>
+  <br>
+  </br>
+
+  
+
+
+
+
+       <label for="country">Country</label>
+    <select id="country" name="country">
+ 
+      
+      <option value="usa">United States of America</option>
+      <option value="canada">Canada</option>
+      <option value="united kingdom">United Kingdom</option>
+      <option value="other">Other</option>
+    </select>
+
+    
+
+
+    <label for="message">Message</label>
+    <textarea id="subject" name="subject" placeholder="Tell us something.." style="height:200px"></textarea>
+
+    
+
+  </form>
+</div>
+
+<!-- A button to open the popup form -->
+<input type="submit" value="Submit" onclick="openForm()"></button>
+
+<!-- The form -->
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Thank You!</h1>
+
+    <label for="We"><b>We will contact you shortly!</b></label>
+    
+
+    
+
+
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+
+
+
+
+
+
+
+
+<br>
+
+
+</br>
+
+
+<footer>© created by Destini Hammond</footer>
+
+
+  </body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8" />
+ <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="about.css" />
+ <title>About Us</title>
+</head>
+<body class="nav2">
+    
+    <header>
+        <!--start of navbar and search bar-->
+        <img src="community_change_logo.jpeg" class="logo" alt="Community Change">
+  <div class="group">
+  <ul class="navbar">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="about.html">About Us</a></li>
+  <li><a href="form.html">Take Action</a></li>
+  <li><a href="contact.html">Contact Us</a></li>
+  </ul>
+  <div class="search">
+  <span class="icon">
+    <ion-icon name="search-outline" class="searchBtn"></ion-icon>
+    <ion-icon name="close-outline" class="closeBtn"></ion-icon>
+  </span>
+  </div>
+  <ion-icon name="menu-outline" class="menuToggle"></ion-icon>
+  </div>
+  <div class="searchBox">
+    <input type="text" placeholder="Search Here...">
+  </div>
+      </header>
+      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script>
+    let searchBtn = document.querySelector('.searchBtn');
+    let closeBtn = document.querySelector('.closeBtn');
+    let searchBox = document.querySelector('.searchBox');
+    let navbar = document.querySelector('.navbar');
+    let menuToggle = document.querySelector('.menuToggle');
+    let header = document.querySelector('header');
+  
+  
+    searchBtn.onclick = function(){
+      searchBox.classList.add('active');
+      closeBtn.classList.add('active');
+      searchBtn.classList.add('active');
+      menuToggle.classList.add('hide');
+      header.classList.remove('open');
+    }
+    closeBtn.onclick = function(){
+      searchBox.classList.remove('active');
+      closeBtn.classList.remove('active');
+      searchBtn.classList.remove('active')
+      menuToggle.classList.remove('hide');
+    }
+    menuToggle.onclick = function(){
+      header.classList.toggle('open');
+      searchBox.classList.remove('active');
+      closeBtn.classList.remove('active');
+      searchBtn.classList.remove('active')
+    }
+  </script>
+   </body>
+  <!--END OF NAVBAR AND SEARCH BAR-->
+  
+ <!-- About section-->
+ <body>
+ <h2 style="text-align: center" class="vote">vote. organize. protest.</h2>
+ <div class="row">
+  <div class="column">
+   <div class="card">
+    <img src="https://i.pinimg.com/originals/01/04/2e/01042eb737aeb2fded0b7c40bd2feae4.jpg" alt="Activist" style="width: 100%" id="vols" />
+    <div class="container">
+     <p class="title">Who Are We?</p>
+     <span>
+      Community Change is a national organization that builds power from
+      the ground up, the name also serves as a sentence of our purpose. We believe that effective and enduring social
+      movements must be led by those most impacted by injustice
+      themselves. Since our founding in 1968, we have built the power of
+      people most marginalized by injustice — especially people of
+      color, women, immigrants, people struggling to make ends meet — to
+      envision and fight for a society where all communities thrive. We
+      are Equity-driven policy that focuses the government’s power on
+      fostering dramatically more fairness in the distribution of wealth
+      and on checking corporate power.
+      <p>Our goal is to dramatically improve material conditions for people struggling to make ends meet in the United States, and we have a 15-year plan to do so. Our role is to fuse the power of organized people, bold ideas, and political clout — a three-dimensional power that we believe is the recipe for an economy and democracy where everyone has the freedom to thrive.</p>
+      </p>
+      <p><span class="button">About Us</span></p>
+    </div>
+   </div>
+  </div>
+  <div class="column">
+   <div class="card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0lLk9v63TJPBDmovnBbLortChPcKl5NGiGw&usqp=CAU" alt="activist" style="width: 100%" />
+    <div class="container">
+     <p class="title">When Did We Get Started?</p>
+     <p>
+      Founded in 1968 Our founders’ vision and their charge—to build
+      power through grassroots leadership, to challenge the government
+      to be a force for good, to focus on poor people, especially poor
+      people of color—are just as relevant today as at the time of our
+      birth.
+     </p>
+     <p>
+      In over 50 years of organizing and advocation we have won
+      significant anti-poverty victories including: Major new
+      investments in affordable housing; Expansions of refundable child
+      tax credits and the food stamps program; Policy changes that drove
+      billions of dollars of private investment to communities of color;
+      Good jobs at scale delivered by new models of organizing and
+      campaigns. Helped mobilize millions of people to win Obamacare and
+      defend the social safety net from radical attacks.
+     </p>
+     <p><span class="button">History</span></p>
+    </div>
+   </div>
+  </div>
+  <div class="column">
+   <div class="card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ5bWM57qU2UbRmfUfK3wOUHrZraB8qwM29Q&usqp=CAU" alt="volunteers" style="width: 100%" />
+    <div class="container">
+     <p class="title">Why Do We Do It?</p>
+     <p>
+      Our mission is to build the power and capacity of low-income
+      people, especially low-income people of color, to change the
+      policies and institutions that impact their lives.
+     </p>
+     <p>
+      Our strategy is to create the conditions for transformational
+      change that moves us in the direction of justice, equity, and an
+      inclusive democracy and economy. That vision requires: People
+      power that resides in Black, brown, and immigrant communities;
+      Community organizing models capable of engaging directly affected
+      people at scale; A bold governing agenda rooted in a new common
+      sense for our political economy; An electorate that looks more
+      like the country.
+     </p>
+     <p><span class="button">Mission Statement </span></p>
+    </div>
+   </div>
+  </div>
+ </div>
+ </div>
+</body>
+</html>
